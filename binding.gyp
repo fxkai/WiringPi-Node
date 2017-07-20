@@ -27,12 +27,10 @@
         'src/devlib/piNes.cc',
       ],
       'include_dirs': [
-        'WiringPi/wiringPi',
-        'WiringPi/devLib'
       ],
       'libraries': [
-        '<!(pwd)/WiringPi/wiringPi/libwiringPi.a',
-        '<!(pwd)/WiringPi/devLib/libwiringPiDev.a'
+        '-lwiringPi',
+        '-lwiringPiDev'
       ],
       'cflags': [
         '-Wall'
